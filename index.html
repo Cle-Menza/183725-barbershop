@@ -26,7 +26,7 @@
   </header>
   <main class="wrapper">
     <div class="logo_page">
-      <img src="img/borod_logo_index.png" width="368px" height="204px" alt="Барбершоп «Бородинский»">
+      <img src="img/borod_logo_index.png" width="368" height="204" alt="Барбершоп «Бородинский»">
     </div>
     <div class="features">
       <div class="features_items">
@@ -36,8 +36,8 @@
       <div class="features_items">
         <h2>Круто</h2>
         <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
-        МЫ&nbspСДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
-        ВО&nbspВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
+        МЫ&nbsp;СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
+        ВО&nbsp;ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
         </p>
       </div>
       <div class="features_items">
@@ -57,7 +57,7 @@
       <div class="index_content_right">
         <h2>Фотогалерея</h2>
         <figure>
-          <img src="img/galery.jpg" width="286px" height="164px" alt="Галерея">
+          <img src="img/galery.jpg" width="286" height="164" alt="Галерея">
         </figure>
         <button class="btn galery_btn_prev" type="button">Назад</button>
         <button class="btn galery_btn_next" type="button">Вперед</button>
@@ -77,7 +77,7 @@
       </div>
       <div class="index_content_right">
         <h2>Записаться</h2>
-        <b>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С&nbspВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</b>
+        <b>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С&nbsp;ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</b>
         <form class="index_form_offer" action="" method="post">
           <input type="text" name="date" placeholder="Дата" required>
           <input type="text" name="time" placeholder="Время" required>
@@ -100,9 +100,9 @@
       </div>
       <div class="footer_socials">
         ДАВАЙТЕ ДРУЖИТЬ!
-        <a class="soc_ico i_v" href="">Vkontakte</a>
-        <a class="soc_ico i_f" href="">Facebook</a>
-        <a class="soc_ico i_i" href="">Instagram</a>
+        <a class="i_v" href="">Vkontakte</a>
+        <a class="i_f" href="">Facebook</a>
+        <a class="i_i" href="">Instagram</a>
       </div>
       <div class="footer_dev">
         Разработано:
@@ -110,5 +110,28 @@
       </div>
     </div>
   </footer>
+  <!-- Modal End -->
+  <div class="users_block_modal">
+    <button class="users_block_close" type="button"></button>
+    <h2>Личный кабинет</h2>
+    <p>Введите пожалуйста свой логин и пароль</p>
+    <form action="" method="post">
+      <input type="text" name="name" placeholder="Логин" required>
+      <input type="password" name="password" placeholder="Пароль" required>
+      <label class="users_block_checked">
+        <input type="checkbox" name="remember_me" value="remember_me">
+        <span class="checkbox_indicators"></span>
+        Запомните меня
+      </label>
+      <a href="">Я забыл пароль</a>
+      <button class="btn users_block_modal_submit" type="submit">Войти</button>
+    </form>
+  </div>
+  <div class="index_opacity"></div>
+  <div class="i_map_modal_open">
+    <div class="users_block_close"></div>
+  </div>
+  <div class="index_opacity"></div>
+  <!-- Modal End -->
 </body>
 </html>

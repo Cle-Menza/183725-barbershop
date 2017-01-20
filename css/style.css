@@ -26,6 +26,9 @@ img {
   clear: both;
 }
 .btn {
+  font-family: "PT Sans Narrow";
+  text-transform: uppercase;
+  font-weight: 700;
   color: #ffffff;
   display: block;
   margin: 0;
@@ -163,7 +166,7 @@ img {
   margin-bottom: 34px;
   color: #000000;
   background: url("../img/vert_line.png") no-repeat center,
-      #f8f5f2 url("../img/index_content.png");
+  #f8f5f2 url("../img/index_content.png");
 }
 .index_contents h2 {
   font-size: 30px;
@@ -230,7 +233,7 @@ img {
   text-transform: uppercase;
 }
 .index_content_contacts a[href="tel:+74956660266"]:hover {
-  border-bottom: 2px solid #000000;  
+  border-bottom: 2px solid #000000;
 }
 .index_content_contacts p:first-of-type {
   margin-bottom: 22px;
@@ -247,7 +250,7 @@ img {
   font-size: 0;
 }
 .index_form_offer input {
-  background-color: #F9F6F3;
+  background-color: #f9f6f3;
   border: 2px solid #000000;
   display: inline-block;
   font-family: "PT Sans Narrow";
@@ -283,6 +286,7 @@ img {
   text-transform: uppercase;
   line-height: 1.3;
 }
+
 /*******************footer********************/
 .footer_page {
   background: #232323 url("../img/footer_bg.png");
@@ -293,12 +297,18 @@ img {
 }
 .footer_contacts {
   float: left;
-  width: 380px;
+  width: 400px;
   line-height: 24px;
 }
 .footer_contacts a {
   color: #ffffff;
   text-decoration: none;
+}
+.footer_contacts a.i_map_modal {
+  border-bottom: 2px solid #ffffff;
+}
+.footer_contacts a.i_map_modal:hover {
+  border-bottom: none;
 }
 .footer_contacts p {
   margin: 0;
@@ -324,22 +334,22 @@ img {
   background-color: #ffffff;
 }
 .footer_socials a.i_v {
-    background-position: 0 -163px;
+  background-position: 0 -163px;
 }
 .footer_socials a.i_f {
-    background-position: 5px -83px;
+  background-position: 5px -83px;
 }
 .footer_socials a.i_i {
-    background-position: 2px 0;
+  background-position: 2px 0;
 }
 .footer_socials a.i_v:hover {
-    background-position: 0 -198px;
+  background-position: 0 -198px;
 }
 .footer_socials a.i_f:hover {
-    background-position: 5px -124px;
+  background-position: 5px -124px;
 }
 .footer_socials a.i_i:hover {
-    background-position: 2px -40px;
+  background-position: 2px -40px;
 }
 .footer_dev {
   float: right;
@@ -349,6 +359,172 @@ img {
 .footer_dev .btn {
   margin-top: 15px;
 }
-/*******************text here********************/
-/*******************text here********************/
-/*******************text here********************/
+/*******************indexmodal********************/
+.users_block_modal {
+  background: #f9f6f3 url("../img/index_content.png");
+  color: #000000;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -230px;
+  padding: 45px 80px;
+  width: 300px;
+  min-height: 260px;
+  -webkit-box-shadow: 0 0 20px 2px rgba(255,255,255,0.3);
+          box-shadow: 0 0 20px 2px rgba(255,255,255,0.3);
+  z-index: 2;
+  display: none;
+}
+.index_opacity {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000000;
+  z-index: 1;
+  opacity: 0.5;
+  display: none;
+}
+.users_block_close {
+  width: 35px;
+  height: 35px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: -45px;
+  background: transparent;
+}
+.users_block_close::after,
+.users_block_close::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 25px;
+  background: #ffffff;
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}
+.users_block_close::after {
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.users_block_close::before {
+  -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.users_block_modal h2 {
+  font-size: 30px;
+  margin: 0;
+}
+.users_block_modal input[type="text"],
+.users_block_modal input[type="password"] {
+  border: 2px solid #000000;
+  background-color: #f9f6f3;
+  text-transform: uppercase;
+  font-family: "PT Sans Narrow";
+  font-weight: 700;
+  padding: 10px 40px 10px 15px;
+  width: 241px;
+  outline: none;
+}
+.users_block_modal input[type="text"] {
+  background: url("../img/users_modal.png") no-repeat 265px center;
+}
+.users_block_modal input[type="password"] {
+  background: url("../img/passw_modal.png") no-repeat 265px center;
+}
+.users_block_modal input[type="text"]:focus,
+.users_block_modal input[type="password"]:focus {
+  border: 2px solid #663d15;
+}
+.users_block_modal input[type="text"]:hover,
+.users_block_modal input[type="password"]:hover {
+  border: 2px solid #663d15;
+}
+.users_block_modal input[type="text"] {
+  margin-bottom: 11px;
+}
+.users_block_modal input[type="password"] {
+  margin-bottom: 15px;
+}
+.users_block_modal label {
+  padding-left: 32px;
+  position: relative;
+}
+.users_block_checked input[type="checkbox"] {
+  display: none;
+}
+.users_block_checked input[type="checkbox"] + .checkbox_indicators {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+.users_block_checked input[type="checkbox"]:checked + .checkbox_indicators::before,
+.users_block_checked input[type="checkbox"]:checked + .checkbox_indicators::after {
+  content: "";
+  width: 2px;
+  height: 16px;
+  background: #000000;
+  position: absolute;
+  left: 7px;
+  top: 0;
+}
+.checkbox_indicators::before {
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.checkbox_indicators::after {
+  -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.users_block_modal a {
+  color: #000000;
+  float: right;
+}
+.users_block_modal a:hover {
+  text-decoration: none;
+}
+.users_block_modal_submit {
+  width: 100%;
+  margin-top: 20px;
+}
+.i_map_modal_open {
+  width: 767px;
+  height: 561px;
+  border: 7px solid #ffffff;
+  -webkit-box-shadow: 0 0 10px 2px #000000;
+          box-shadow: 0 0 10px 2px #000000;
+  position: fixed;
+  z-index: 2;
+  top: 50px;
+  left: 50%;
+  margin-left: -390px;
+  background: #ffffff url("../img/modal_map.jpg") no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  display: none;
+}
+
+/*******************texthere********************/
+/*******************texthere********************/
