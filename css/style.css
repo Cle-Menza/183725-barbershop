@@ -327,11 +327,11 @@ img {
   width: 43px;
   height: 43px;
   background: #000000 url("../img/spritesheet.png") no-repeat;
-  -webkit-transition: background-color 3s ease;
-     -moz-transition: background-color 3s ease;
-      -ms-transition: background-color 3s ease;
-       -o-transition: background-color 3s ease;
-          transition: background-color 3s ease;
+  -webkit-transition: all 0.3s linear;
+     -moz-transition: all 0.3s linear;
+      -ms-transition: all 0.3s linear;
+       -o-transition: all 0.3s linear;
+          transition: all 0.3s linear;
 }
 .footer_socials a:hover {
   background-color: #ffffff;
