@@ -7,14 +7,15 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
-<body>
+<body class="inner_body">
   <header class="header_page">
     <div class="wrapper clearfix">
       <nav class="header_menu">
         <ul>
+          <li><a class="inner_page_logo" href=""><img src="img/logo_inner.png" alt="Logo Inner"></a></li>
           <li><a href="">Информация</a></li>
           <li><a href="">Новости</a></li>
-          <li><a href="">Прайс-лист</a></li>
+          <li><a class="header_menu_current" href="">Прайс-лист</a></li>
           <li><a href="">Магазин</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
@@ -24,7 +25,59 @@
       </div>
     </div>
   </header>
-
+  <main class="wrapper">
+    <header class="price_header">
+      <h1 class="price_header_title">
+        Прайс-лист
+      </h1>
+      <ul class="breadcrumbs">
+        <li><a href="#">Главная</a></li>
+        <li><span class="breadcrumbs_current">Прайс-лист</span></li>
+      </ul>
+        <div class="price_header_promo_title">
+          <h2>ИСТИННО МУЖСКАЯ КЛАССИКА</h2>
+        </div>
+    </header>
+    <div class="price_contents clearfix">
+      <div class="price_content_left">
+        <h3>МЫ ИСПОЛЬЗУЕМ ТОЛЬКО <br>
+        ЛУЧШИЕ СРЕДСТВА:</h3>
+        <ul class="price_content_list">
+          <li>Baxter of California</li>
+          <li>Mr Natty</li>
+          <li>Suavecito</li>
+          <li>Malin+Goetz</li>
+        </ul>
+      </div>
+      <div class="price_content_right">
+        <h3>ЦЕНЫ НА УСЛУГИ<br>
+        НАШИХ МАСТЕРОВ:</h3>
+        <table class="price_content_table">
+          <tr>
+            <td>СТРИЖКА</td>
+            <td>1500 Р.</td>
+          </tr>
+          <tr>
+            <td>СТРИЖКА БОРОДЫ</td>
+            <td>500 Р.</td>
+          </tr>
+          <tr>
+            <td>НАКРУТКА УСОВ</td>
+            <td>350 Р.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="price_contents clearfix">
+      <h3>НЕСКОЛЬКО СЛОВ О НАС:</h3>
+      <div class="price_content_left text_il_24">
+      Наша парикмахерская занимается исключительно мужскими стрижками.&nbsp;Стрижка каждого клиента для нас - это уникальная и&nbsp;продуманная до мелочей работа. Мы не работаем на количество,&nbsp;мы&nbsp;делаем качество.
+      </div>
+      <div class="price_content_right text_il_24">
+      Наша мастерская расположена в центре города, поэтому сделать&nbsp;стильную&nbsp;стрижку можно в любое время, даже в обеденный&nbsp;перерыв. Здесь вы можете погрузиться в удобную для&nbsp;вас&nbsp;атмосферу, чувствовать себя комфортно и свободно!
+      </div>
+    </div>
+  </main>
   <footer class="footer_page">
     <div class="wrapper clearfix">
       <div class="footer_contacts">

@@ -2,19 +2,23 @@ body {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
+  color: #ffffff;
   text-transform: uppercase;
-  line-height: 1.3;
+  line-height: 1.2;
   background: #242424 url("../img/index_bg.jpg") no-repeat;
   background-position: center top;
   -webkit-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
-  color: #ffffff;
   margin: 0;
   position: relative;
 }
+.inner_body {
+  background: #f8f5f2 url("../img/index_content.png");
+  color: #000000;
+}
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .wrapper {
@@ -65,6 +69,8 @@ img {
 }
 .header_menu li {
   display: inline-block;
+  vertical-align: middle;
+  position: relative;
 }
 .header_menu a {
   font-size: 16px;
@@ -72,10 +78,21 @@ img {
   display: block;
   color: #ffffff;
   text-decoration: none;
-  padding: 27px 20px 29px;
+  padding: 26px 20px 28px;
+}
+.inner_page_logo {
+  height: 17px;
 }
 .header_menu a:hover {
   background: #242424;
+}
+.header_menu_current::after {
+  content: "";
+  border-bottom: 4px solid #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
 }
 .users_block {
   float: right;
@@ -87,7 +104,7 @@ img {
   font-size: 16px;
   line-height: 1.2;
   color: #ffffff;
-  padding: 27.4px 22px 29.4px 51px;
+  padding: 26px 22px 26px 51px;
   position: relative;
 }
 .users_block a::after {
@@ -236,7 +253,7 @@ img {
   text-transform: uppercase;
 }
 .index_content_contacts a[href="tel:+74956660266"]:hover {
-  border-bottom: 2px solid #000000;
+  text-decoration: underline;
 }
 .index_content_contacts p:first-of-type {
   margin-bottom: 22px;
@@ -289,7 +306,123 @@ img {
   text-transform: uppercase;
   line-height: 1.3;
 }
-
+.price_header_title {
+  font-size: 30px;
+}
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.breadcrumbs li {
+  display: inline-block;
+}
+.breadcrumbs a {
+  text-decoration: none;
+  padding-right: 25px;
+  margin-right: 15px;
+  color: #000000;
+  position: relative;
+}
+.breadcrumbs a::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #000000;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -5px;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.breadcrumbs span {
+  color: #aba9a7;
+}
+.price_header_promo_title {
+  margin-top: 48px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.price_header_promo_title h2 {
+  display: inline;
+  font-size: 48px;
+  line-height: 48px;
+  padding: 0 26px;
+  background: #f8f5f2 url("../img/index_content.png");
+  position: relative;
+  z-index: 2;
+  margin: 0;
+}
+.price_header_promo_title::after {
+  content: "";
+  border-bottom: 2px solid #000000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+.price_contents h3 {
+  font-size: 24px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.price_content_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.price_content_list li {
+  padding-left: 20px;
+  margin-top: 21px; 
+  margin-bottom: 12px;
+  position: relative;
+}
+.price_content_list li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #000000;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -5px;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.price_content_table {
+  margin-top: 38px;
+  width: 100%;
+  border-collapse: collapse;
+}
+.price_content_table td {
+  border: 2px solid #000000;
+  padding: 11px 17px;
+  width: 50%;
+}
+.price_content_table td:last-child {
+  text-align: center;
+}
+.price_content_left.text_il_24,
+.price_content_right.text_il_24 {
+  font-size: 14px;
+  line-height: 24px;
+}
+.price_content_left {
+  float: left;
+  width: 460px;
+}
+.price_content_right {
+  float: right;
+  width: 460px;
+}
 /*******************footer********************/
 .footer_page {
   background: #232323 url("../img/footer_bg.png");
@@ -308,10 +441,16 @@ img {
   text-decoration: none;
 }
 .footer_contacts a.i_map_modal {
-  border-bottom: 2px solid #ffffff;
+  text-decoration: underline;
 }
 .footer_contacts a.i_map_modal:hover {
-  border-bottom: none;
+  text-decoration: none;
+}
+.footer_contacts a[href="tel:+74956660266"] {
+  text-decoration: none;
+}
+.footer_contacts a[href="tel:+74956660266"]:hover {
+  text-decoration: underline;
 }
 .footer_contacts p {
   margin: 0;
@@ -528,6 +667,3 @@ img {
           background-size: cover;
   display: none;
 }
-
-/*******************texthere********************/
-/*******************texthere********************/
