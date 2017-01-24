@@ -8,8 +8,8 @@ body {
   background: #242424 url("../img/index_bg.jpg") no-repeat;
   background-position: center top;
   -webkit-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   margin: 0;
   position: relative;
 }
@@ -51,7 +51,9 @@ img {
 .btn:hover {
   background-color: #663d15;
 }
+
 /*******************header********************/
+
 .header_page {
   margin: 0;
   margin-bottom: 55px;
@@ -124,7 +126,9 @@ img {
 .users_block a:hover::after {
   opacity: 1;
 }
+
 /*******************logo********************/
+
 .logo_page {
   width: 368px;
   height: 204px;
@@ -134,7 +138,9 @@ img {
   width: 368px;
   height: 204px;
 }
+
 /*******************features********************/
+
 .features {
   font-size: 0;
 }
@@ -167,10 +173,10 @@ img {
   left: 50%;
   margin-left: -10px;
   -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
   background-color: #ffffff;
 }
 .features_items p {
@@ -179,14 +185,15 @@ img {
   margin-bottom: 79px;
   padding: 0 10px;
 }
+
 /*******************index_content********************/
+
 .index_contents {
   width: 780px;
   padding: 47px 80px;
   margin-bottom: 34px;
   color: #000000;
-  background: url("../img/vert_line.png") no-repeat center,
-  #f8f5f2 url("../img/index_content.png");
+  background: url("../img/vert_line.png") no-repeat center, #f8f5f2 url("../img/index_content.png");
 }
 .index_contents h2 {
   font-size: 30px;
@@ -226,8 +233,7 @@ img {
   border: 7px solid #ffffff;
   margin-bottom: 44px;
 }
-.galery_btn_prev,
-.galery_btn_next {
+.galery_btn_prev, .galery_btn_next {
   display: inline-block;
   width: 140px;
   color: #ffffff;
@@ -239,8 +245,7 @@ img {
 .galery_btn_prev {
   margin-right: 14px;
 }
-.contacts_btn_map,
-.contacts_btn_cb {
+.contacts_btn_map, .contacts_btn_cb {
   display: inline-block;
   width: 116px;
 }
@@ -334,10 +339,10 @@ img {
   top: 50%;
   margin-top: -5px;
   -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .breadcrumbs span {
   color: #aba9a7;
@@ -378,7 +383,7 @@ img {
 }
 .price_content_list li {
   padding-left: 20px;
-  margin-top: 21px; 
+  margin-top: 21px;
   margin-bottom: 12px;
   position: relative;
 }
@@ -392,10 +397,10 @@ img {
   top: 50%;
   margin-top: -5px;
   -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .price_content_table {
   margin-top: 38px;
@@ -410,8 +415,7 @@ img {
 .price_content_table td:last-child {
   text-align: center;
 }
-.price_content_left.text_il_24,
-.price_content_right.text_il_24 {
+.price_content_left.text_il_24, .price_content_right.text_il_24 {
   font-size: 14px;
   line-height: 24px;
 }
@@ -423,7 +427,9 @@ img {
   float: right;
   width: 460px;
 }
+
 /*******************footer********************/
+
 .footer_page {
   background: #232323 url("../img/footer_bg.png");
   margin-top: 64px;
@@ -467,10 +473,10 @@ img {
   height: 43px;
   background: #000000 url("../img/spritesheet.png") no-repeat;
   -webkit-transition: all 0.3s linear;
-     -moz-transition: all 0.3s linear;
-      -ms-transition: all 0.3s linear;
-       -o-transition: all 0.3s linear;
-          transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .footer_socials a:hover {
   background-color: #ffffff;
@@ -501,7 +507,9 @@ img {
 .footer_dev .btn {
   margin-top: 15px;
 }
+
 /*******************indexmodal********************/
+
 .users_block_modal {
   background: #f9f6f3 url("../img/index_content.png");
   color: #000000;
@@ -512,8 +520,8 @@ img {
   padding: 45px 80px;
   width: 300px;
   min-height: 260px;
-  -webkit-box-shadow: 0 0 20px 2px rgba(255,255,255,0.3);
-          box-shadow: 0 0 20px 2px rgba(255,255,255,0.3);
+  -webkit-box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.3);
   z-index: 2;
   display: none;
 }
@@ -539,8 +547,7 @@ img {
   right: -45px;
   background: transparent;
 }
-.users_block_close::after,
-.users_block_close::before {
+.users_block_close::after, .users_block_close::before {
   content: "";
   display: block;
   width: 5px;
@@ -552,24 +559,23 @@ img {
 }
 .users_block_close::after {
   -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .users_block_close::before {
   -webkit-transform: rotate(-45deg);
-     -moz-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-       -o-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .users_block_modal h2 {
   font-size: 30px;
   margin: 0;
 }
-.users_block_modal input[type="text"],
-.users_block_modal input[type="password"] {
+.users_block_modal input[type="text"], .users_block_modal input[type="password"] {
   border: 2px solid #000000;
   background-color: #f9f6f3;
   text-transform: uppercase;
@@ -585,12 +591,10 @@ img {
 .users_block_modal input[type="password"] {
   background: url("../img/passw_modal.png") no-repeat 265px center;
 }
-.users_block_modal input[type="text"]:focus,
-.users_block_modal input[type="password"]:focus {
+.users_block_modal input[type="text"]:focus, .users_block_modal input[type="password"]:focus {
   border: 2px solid #663d15;
 }
-.users_block_modal input[type="text"]:hover,
-.users_block_modal input[type="password"]:hover {
+.users_block_modal input[type="text"]:hover, .users_block_modal input[type="password"]:hover {
   border: 2px solid #663d15;
 }
 .users_block_modal input[type="text"] {
@@ -606,7 +610,7 @@ img {
 .users_block_checked input[type="checkbox"] {
   display: none;
 }
-.users_block_checked input[type="checkbox"] + .checkbox_indicators {
+.users_block_checked input[type="checkbox"]+.checkbox_indicators {
   display: block;
   width: 16px;
   height: 16px;
@@ -615,8 +619,7 @@ img {
   left: 0;
   top: -2px;
 }
-.users_block_checked input[type="checkbox"]:checked + .checkbox_indicators::before,
-.users_block_checked input[type="checkbox"]:checked + .checkbox_indicators::after {
+.users_block_checked input[type="checkbox"]:checked+.checkbox_indicators::before, .users_block_checked input[type="checkbox"]:checked+.checkbox_indicators::after {
   content: "";
   width: 2px;
   height: 16px;
@@ -627,17 +630,17 @@ img {
 }
 .checkbox_indicators::before {
   -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .checkbox_indicators::after {
   -webkit-transform: rotate(-45deg);
-     -moz-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-       -o-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .users_block_modal a {
   color: #000000;
@@ -655,7 +658,7 @@ img {
   height: 561px;
   border: 7px solid #ffffff;
   -webkit-box-shadow: 0 0 10px 2px #000000;
-          box-shadow: 0 0 10px 2px #000000;
+  box-shadow: 0 0 10px 2px #000000;
   position: fixed;
   z-index: 2;
   top: 50px;
@@ -663,7 +666,7 @@ img {
   margin-left: -390px;
   background: #ffffff url("../img/modal_map.jpg") no-repeat;
   -webkit-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   display: none;
 }
