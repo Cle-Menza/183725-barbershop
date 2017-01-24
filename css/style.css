@@ -106,7 +106,7 @@ img {
   font-size: 16px;
   line-height: 1.2;
   color: #ffffff;
-  padding: 26px 22px 26px 51px;
+  padding: 26px 22px 28px 51px;
   position: relative;
 }
 .users_block a::after {
@@ -428,7 +428,190 @@ img {
   width: 460px;
 }
 
-/*******************footer********************/
+/* Shop Begin */
+
+.form_sort {
+  float: left;
+  width: 220px;
+}
+.shop_items {
+  float: right;
+  width: 700px;
+  margin-top: 55px;
+}
+.form_sort fieldset {
+  border: none;
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+}
+.form_sort legend {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+.form_sort label {
+  font-size: 14px;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 13px;
+  padding-left: 44px;
+  position: relative;
+}
+.form_sort input[type="checkbox"], .form_sort input[type="radio"] {
+  display: none;
+}
+.form_sort input[type="checkbox"]+b {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+}
+.form_sort input[type="checkbox"]+b::after, .form_sort input[type="checkbox"]+b::before {
+  content: "";
+  width: 2px;
+  height: 16px;
+  background: #000000;
+  position: absolute;
+  top: 0;
+  left: 7px;
+  display: none;
+}
+.form_sort input[type="checkbox"]+b::after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.form_sort input[type="checkbox"]+b::before {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.form_sort input[type="checkbox"]:checked+b::after, .form_sort input[type="checkbox"]:checked+b::before {
+  display: block;
+}
+.form_sort input[type="radio"]+b {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+.form_sort input[type="radio"]+b::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #000000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -4px;
+  margin-top: -4px;
+  border-radius: 50%;
+  display: none;
+}
+.form_sort input[type="radio"]:checked+b::after {
+  display: block;
+}
+.form_sort button[name="button_sort_form"] {
+  margin-top: 17px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.shop_item {
+  float: left;
+  width: 188px;
+  height: 254px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background: #ffffff;
+  box-shadow: 0 0 15px -1px rgba(0, 1, 1, 0.2);
+  position: relative;
+}
+.shop_item:not(:nth-of-type(3n)) {
+  margin-right: 20px;
+}
+.shop_item:nth-last-child(-n+4) {
+  margin-bottom: 30px;
+}
+.shop_item_img {
+  width: 220px;
+  margin-left: -16px;
+  margin-top: -16px;
+  max-height: 165px;
+  overflow: hidden;
+}
+.shop_item_img img {
+  width: 220px;
+  height: auto;
+}
+.shop_item h1 {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: none;
+  margin: 0;
+  margin-top: 12px;
+}
+.shop_item h1>b {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.shop_item_cost {
+  display: inline-block;
+  padding: 15px 5px;
+  width: 99px;
+  background: #e5e5e5;
+  text-align: center;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+.shop_item button {
+  padding: 15px 5px;
+  width: 80px;
+  margin-bottom: 0;
+  display: inline-block;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+.paginator {
+  float: left;
+  min-width: 200px;
+  margin-top: 10px;
+}
+.paginat {
+  display: inline-block;
+  text-align: center;
+  width: 43px;
+  height: 43px;
+  margin-right: 4px;
+}
+.paginat a {
+  display: block;
+  background: #000000;
+  color: #ffffff;
+  line-height: 43px;
+  text-decoration: none;
+}
+.pcurrent a {
+  background: #ffffff;
+  color: #000000;
+}
+.paginat:not(.pcurrent) a:hover {
+  background: #663d15;
+}
+
+/* footer */
 
 .footer_page {
   background: #232323 url("../img/footer_bg.png");

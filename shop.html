@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Барбершоп «Бородинский»</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body class="inner_body">
+  <header class="header_page">
+    <div class="wrapper clearfix">
+      <nav class="header_menu">
+        <ul>
+          <li>
+            <a class="inner_page_logo" href=""><img src="img/logo_inner.png" alt="Logo Inner"></a>
+          </li>
+          <li><a href="">Информация</a></li>
+          <li><a href="">Новости</a></li>
+          <li><a href="">Прайс-лист</a></li>
+          <li><a class="header_menu_current" href="">Магазин</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="users_block">
+        <a href="">Вход</a>
+      </div>
+    </div>
+  </header>
+  <main class="wrapper clearfix">
+    <header class="price_header">
+      <h1 class="price_header_title">
+        СРЕДСТВА ДЛЯ УХОДА
+      </h1>
+      <ul class="breadcrumbs">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Магазин</a></li>
+        <li><span class="breadcrumbs_current">СРЕДСТВА ДЛЯ УХОДА</span></li>
+      </ul>
+    </header>
+    <form action="" class="form_sort">
+      <fieldset>
+        <legend>Производители:</legend>
+        <label><input type="checkbox" name="brend" value="1" checked><b></b>Baxter of California</label>
+        <label><input type="checkbox" name="brend" value="2"><b></b>Mr Natty</label>
+        <label><input type="checkbox" name="brend" value="3" checked><b></b>Suavecito</label>
+        <label><input type="checkbox" name="brend" value="4"><b></b>Malin+Goetz</label>
+        <label><input type="checkbox" name="brend" value="5"><b></b>Murray’s</label>
+        <label><input type="checkbox" name="brend" value="6" checked><b></b>American Crew</label>
+      </fieldset>
+      <fieldset>
+        <legend>ГРУППЫ ТОВАРОВ:</legend>
+        <label><input type="radio" name="group" value="1"><b></b>Бритвенные принадлежности</label>
+        <label><input type="radio" name="group" value="2" checked><b></b>Средства для ухода</label>
+        <label><input type="radio" name="group" value="3"><b></b>Аксессуары</label>
+      </fieldset>
+      <button class="btn" type="button" name="button_sort_form">Показать</button>
+    </form>
+    <section class="shop_items">
+      <article class="shop_item">
+        <div class="shop_item_img">
+          <img src="img/item1.png" alt="Item">
+        </div>
+        <h1>Набор для путешествий<br>
+        <b>«Baxter of California»</b></h1>
+        <div class="shop_item_cost">2 900 РУБ.</div>
+        <button class="btn" type="button" name="button_add_offer">КУПИТЬ</button>
+      </article>
+      <article class="shop_item">
+        <div class="shop_item_img">
+          <img src="img/item2.png" alt="Item">
+        </div>
+        <h1>Увлажняющий кондиционер<br>
+        <b>«Baxter of California»</b></h1>
+        <div class="shop_item_cost">750 РУБ.</div>
+        <button class="btn" type="button" name="button_add_offer">КУПИТЬ</button>
+      </article>
+      <article class="shop_item">
+        <div class="shop_item_img">
+          <img src="img/item3.png" alt="Item">
+        </div>
+        <h1>Гель для волос<br>
+        <b>«SUAVECITO»</b></h1>
+        <div class="shop_item_cost">290 РУБ.</div>
+        <button class="btn" type="button" name="button_add_offer">КУПИТЬ</button>
+      </article>
+      <article class="shop_item">
+        <div class="shop_item_img">
+          <img src="img/item4.jpg" alt="Item">
+        </div>
+        <h1>Глина для укладки волос<br>
+        <b>«American crew»</b></h1>
+        <div class="shop_item_cost">500 РУБ.</div>
+        <button class="btn" type="button" name="button_add_offer">КУПИТЬ</button>
+      </article>
+      <article class="shop_item">
+        <div class="shop_item_img">
+          <img src="img/item5.png" alt="Item">
+        </div>
+        <h1>Гель для волос<br>
+        <b>«AMERICAN CREW»</b></h1>
+        <div class="shop_item_cost">300 РУБ.</div>
+        <button class="btn" type="button" name="button_add_offer">КУПИТЬ</button>
+      </article>
+      <article class="shop_item">
+        <div class="shop_item_img">
+          <img src="img/item6.png" alt="Item">
+        </div>
+        <h1>Набор для бритья<br>
+        <b>«Baxter of California»</b></h1>
+        <div class="shop_item_cost">3 900 РУБ.</div>
+        <button class="btn" type="button" name="button_add_offer">КУПИТЬ</button>
+      </article>
+      <div class="paginator">
+        <div class="paginat"><a href="">1</a></div>
+        <div class="paginat pcurrent"><a href="">2</a></div>
+        <div class="paginat"><a href="">3</a></div>
+        <div class="paginat"><a href="">4</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer_page">
+    <div class="wrapper clearfix">
+      <div class="footer_contacts">
+        <p>
+          БАРБЕРШОП «БОРОДИНСКИЙ» <br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <br>
+          <a class="i_map_modal" href="">КАК НАС НАЙТИ?</a> <br> ТЕЛЕФОН: <a href="tel:+74956660266">+7 (495) 666-02-66</a>
+        </p>
+      </div>
+      <div class="footer_socials">
+        ДАВАЙТЕ ДРУЖИТЬ!
+        <a class="i_v" href="">Vkontakte</a>
+        <a class="i_f" href="">Facebook</a>
+        <a class="i_i" href="">Instagram</a>
+      </div>
+      <div class="footer_dev">
+        Разработано:
+        <a class="btn" href="">htmlacademy.ru</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
