@@ -7,9 +7,7 @@ body {
   line-height: 1.2;
   background: #242424 url("../img/index_bg.jpg") no-repeat;
   background-position: center top;
-  -webkit-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   margin: 0;
   position: relative;
 }
@@ -172,11 +170,8 @@ img {
   bottom: 0;
   left: 50%;
   margin-left: -10px;
-  -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
   background-color: #ffffff;
 }
 .features_items p {
@@ -340,11 +335,8 @@ img {
   right: 0;
   top: 50%;
   margin-top: -5px;
-  -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
 }
 .breadcrumbs span {
   color: #aba9a7;
@@ -398,11 +390,8 @@ img {
   left: 0;
   top: 50%;
   margin-top: -5px;
-  -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
 }
 .price_content_table {
   margin-top: 38px;
@@ -487,14 +476,12 @@ img {
   display: none;
 }
 .form_sort input[type="checkbox"] + b::after {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
 }
 .form_sort input[type="checkbox"] + b::before {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
 }
 .form_sort input[type="checkbox"]:checked + b::after,
 .form_sort input[type="checkbox"]:checked + b::before {
@@ -619,7 +606,6 @@ img {
   background: #ffffff;
   color: #000000;
   line-height: 43px;
-
 }
 .paginat a:hover {
   background: #663d15;
@@ -669,11 +655,7 @@ img {
   width: 43px;
   height: 43px;
   background: #000000 url("../img/spritesheet.png") no-repeat;
-  -webkit-transition: all 0.3s linear;
-     -moz-transition: all 0.3s linear;
-      -ms-transition: all 0.3s linear;
-       -o-transition: all 0.3s linear;
-          transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .footer_socials a:hover {
   background-color: #ffffff;
@@ -717,8 +699,7 @@ img {
   padding: 45px 80px;
   width: 300px;
   min-height: 260px;
-  -webkit-box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.3);
-          box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.3);
   z-index: 2;
   display: none;
 }
@@ -756,18 +737,12 @@ img {
   top: 5px;
 }
 .users_block_close::after {
-  -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
 }
 .users_block_close::before {
-  -webkit-transform: rotate(-45deg);
-     -moz-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-       -o-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
 }
 .users_block_modal h2 {
   font-size: 30px;
@@ -831,18 +806,12 @@ img {
   top: 0;
 }
 .checkbox_indicators::before {
-  -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
 }
 .checkbox_indicators::after {
-  -webkit-transform: rotate(-45deg);
-     -moz-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-       -o-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
 }
 .users_block_modal a {
   color: #000000;
@@ -859,16 +828,13 @@ img {
   width: 767px;
   height: 561px;
   border: 7px solid #ffffff;
-  -webkit-box-shadow: 0 0 10px 2px #000000;
-          box-shadow: 0 0 10px 2px #000000;
+  box-shadow: 0 0 10px 2px #000000;
   position: fixed;
   z-index: 2;
   top: 50px;
   left: 50%;
   margin-left: -390px;
   background: #ffffff url("../img/modal_map.jpg") no-repeat;
-  -webkit-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   display: none;
 }
