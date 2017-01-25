@@ -15,12 +15,12 @@
       <nav class="header_menu">
         <ul>
           <li>
-            <a class="inner_page_logo" href=""><img src="img/logo_inner.png" alt="Logo Inner"></a>
+            <a class="inner_page_logo" href="index.html"><img width="111" height="24" src="img/logo_inner.png" alt="Logo Inner"></a>
           </li>
           <li><a href="">Информация</a></li>
           <li><a href="">Новости</a></li>
-          <li><a href="">Прайс-лист</a></li>
-          <li><a class="header_menu_current" href="">Магазин</a></li>
+          <li><a href="price.html">Прайс-лист</a></li>
+          <li><a class="header_menu_current" href="shop.html">Магазин</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
       </nav>
@@ -35,8 +35,8 @@
         СРЕДСТВА ДЛЯ УХОДА
       </h1>
       <ul class="breadcrumbs">
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Магазин</a></li>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="shop.html">Магазин</a></li>
         <li><span class="breadcrumbs_current">СРЕДСТВА ДЛЯ УХОДА</span></li>
       </ul>
     </header>
@@ -52,16 +52,16 @@
         <label>
           <input type="checkbox" name="brend" value="4"><b></b>Malin+Goetz</label>
         <label>
-          <input type="checkbox" name="brend" value="5"><b></b>Murray’s</label>
+          <input type="checkbox" name="brend" value="5" disabled><b></b>Murray’s</label>
         <label>
-          <input type="checkbox" name="brend" value="6" checked><b></b>American Crew</label>
+          <input type="checkbox" name="brend" value="6" checked disabled><b></b>American Crew</label>
       </fieldset>
       <fieldset>
         <legend>ГРУППЫ ТОВАРОВ:</legend>
         <label>
           <input type="radio" name="group" value="1"><b></b>Бритвенные принадлежности</label>
         <label>
-          <input type="radio" name="group" value="2" checked><b></b>Средства для ухода</label>
+          <input type="radio" name="group" value="2" checked disabled><b></b>Средства для ухода</label>
         <label>
           <input type="radio" name="group" value="3"><b></b>Аксессуары</label>
       </fieldset>
@@ -70,16 +70,16 @@
     <section class="shop_items">
       <article class="shop_item">
         <div class="shop_item_img">
-          <a href=""><img src="img/item1.png" alt="Item"></a>
+          <a href="item.html"><img width="220" height="165" src="img/item1.png" alt="Item"></a>
         </div>
-        <a href=""><h1>Набор для путешествий<br>
+        <a href="item.html"><h1>Набор для путешествий<br>
         <b>«Baxter of California»</b></h1></a>
         <div class="shop_item_cost">2 900 РУБ.</div>
         <button class="btn" type="button" name="button_add_offer">КУПИТЬ</button>
       </article>
       <article class="shop_item">
         <div class="shop_item_img">
-          <a href=""><img src="img/item2.png" alt="Item"></a>
+          <a href=""><img width="220" height="165" src="img/item2.png" alt="Item"></a>
         </div>
         <a href="">
           <h1>Увлажняющий кондиционер<br>
@@ -90,7 +90,7 @@
       </article>
       <article class="shop_item">
         <div class="shop_item_img">
-          <a href=""><img src="img/item3.png" alt="Item"></a>
+          <a href=""><img width="220" height="165" src="img/item3.png" alt="Item"></a>
         </div>
         <a href="">
           <h1>Гель для волос<br>
@@ -101,7 +101,7 @@
       </article>
       <article class="shop_item">
         <div class="shop_item_img">
-          <a href=""><img src="img/item4.jpg" alt="Item"></a>
+          <a href=""><img width="220" height="165" src="img/item4.jpg" alt="Item"></a>
         </div>
         <a href="">
           <h1>Глина для укладки волос<br>
@@ -112,7 +112,7 @@
       </article>
       <article class="shop_item">
         <div class="shop_item_img">
-          <a href=""><img src="img/item5.png" alt="Item"></a>
+          <a href=""><img width="220" height="165" src="img/item5.png" alt="Item"></a>
         </div>
         <a href="">
           <h1>Гель для волос<br>
@@ -123,7 +123,7 @@
       </article>
       <article class="shop_item">
         <div class="shop_item_img">
-          <a href=""><img src="img/item6.png" alt="Item"></a>
+          <a href=""><img width="220" height="165" src="img/item6.png" alt="Item"></a>
         </div>
         <a href="">
           <h1>Набор для бритья<br>
@@ -140,7 +140,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer_page">
+  <footer class="footer_page footer_inner">
     <div class="wrapper clearfix">
       <div class="footer_contacts">
         <p>
@@ -162,7 +162,7 @@
       </div>
       <div class="footer_dev">
         Разработано:
-        <a class="btn" href="">htmlacademy.ru</a>
+        <a class="btn btn_copyright" href="">htmlacademy.ru</a>
       </div>
     </div>
   </footer>

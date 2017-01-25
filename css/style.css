@@ -326,6 +326,9 @@ img {
   color: #000000;
   position: relative;
 }
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
 .breadcrumbs a::after {
   content: "";
   width: 10px;
@@ -450,6 +453,9 @@ img {
   padding-left: 44px;
   position: relative;
 }
+.form_sort label:hover {
+  color: #663d15;
+}
 .form_sort input[type="checkbox"],
 .form_sort input[type="radio"] {
   display: none;
@@ -475,6 +481,13 @@ img {
   left: 7px;
   display: none;
 }
+.form_sort input[type="checkbox"] + b:hover::before,
+.form_sort input[type="checkbox"] + b:hover::after {
+  background-color: #663d15;
+}
+.form_sort input[type="checkbox"] + b:hover {
+  border-color: #663d15;
+}
 .form_sort input[type="checkbox"] + b::after {
   -ms-transform: rotate(45deg);
       transform: rotate(45deg);
@@ -486,6 +499,13 @@ img {
 .form_sort input[type="checkbox"]:checked + b::after,
 .form_sort input[type="checkbox"]:checked + b::before {
   display: block;
+}
+.form_sort input[type="checkbox"]:disabled + b::after,
+.form_sort input[type="checkbox"]:disabled + b::before {
+  background-color: #aba9a7;
+}
+.form_sort input[type="checkbox"]:disabled + b {
+  border-color: #aba9a7;
 }
 .form_sort input[type="radio"] + b {
   display: block;
@@ -511,8 +531,20 @@ img {
   border-radius: 50%;
   display: none;
 }
+.form_sort input[type="radio"] + b:hover {
+  border-color: #663d15;
+}
+.form_sort input[type="radio"] + b:hover::after {
+  background-color: #663d15;
+}
 .form_sort input[type="radio"]:checked + b::after {
   display: block;
+}
+.form_sort input[type="radio"]:disabled + b::after {
+  background-color: #afadab;
+}
+.form_sort input[type="radio"]:disabled + b {
+  border-color: #afadab;
 }
 .form_sort .button_sort_form {
   display: inline-block;
@@ -686,7 +718,13 @@ img {
 .footer_dev .btn {
   margin-top: 15px;
 }
-
+.btn_copyright:hover {
+  background: #ffffff;
+  color: #000000;
+}
+.footer_inner {
+  box-shadow: inset 0 15px 20px 0 rgba(0, 1, 1, 0.8);
+}
 /*******************indexmodal********************/
 
 .users_block_modal {
