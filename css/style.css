@@ -527,7 +527,8 @@ img {
 .form_sort input[type="radio"]:checked + b::after {
   display: block;
 }
-.form_sort button[name="button_sort_form"] {
+.form_sort .button_sort_form {
+  display: inline-block;
   margin-top: 17px;
   padding-left: 28px;
   padding-right: 28px;
@@ -559,12 +560,16 @@ img {
   width: 220px;
   height: auto;
 }
+.shop_item a {
+  text-decoration: none;
+}
 .shop_item h1 {
   font-size: 14px;
   line-height: 18px;
   text-transform: none;
   margin: 0;
   margin-top: 12px;
+  color: #000000;
 }
 .shop_item h1 > b {
   font-size: 14px;
@@ -591,12 +596,13 @@ img {
   right: 16px;
 }
 .paginator {
-  float: left;
   min-width: 200px;
   margin-top: 10px;
+  clear: both;
 }
 .paginat {
   display: inline-block;
+  vertical-align: top;
   text-align: center;
   width: 43px;
   height: 43px;
@@ -609,11 +615,13 @@ img {
   line-height: 43px;
   text-decoration: none;
 }
-.pcurrent a {
+.pcurrent {
   background: #ffffff;
   color: #000000;
+  line-height: 43px;
+
 }
-.paginat:not(.pcurrent) a:hover {
+.paginat a:hover {
   background: #663d15;
 }
 
@@ -652,7 +660,7 @@ img {
 }
 .footer_socials {
   float: left;
-  width: 140px;
+  max-width: 181px;
   text-align: center;
 }
 .footer_socials a {
