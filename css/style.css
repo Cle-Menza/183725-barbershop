@@ -1,3 +1,4 @@
+/* global */
 body {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 14px;
@@ -25,6 +26,11 @@ img {
   padding-right: 10px;
   margin: 0 auto;
 }
+.justify::after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+}
 .clearfix:after {
   content: "";
   display: table;
@@ -50,8 +56,7 @@ img {
   background-color: #663d15;
 }
 
-/*******************header********************/
-
+/* mavigation header */
 .header_page {
   margin: 0;
   margin-bottom: 55px;
@@ -125,7 +130,7 @@ img {
   opacity: 1;
 }
 
-/*******************logo********************/
+/* index logo */
 
 .logo_page {
   width: 368px;
@@ -137,7 +142,7 @@ img {
   height: 204px;
 }
 
-/*******************features********************/
+/* index features */
 
 .features {
   font-size: 0;
@@ -181,7 +186,7 @@ img {
   padding: 0 10px;
 }
 
-/*******************index_content********************/
+/* index content */
 
 .index_contents {
   width: 780px;
@@ -308,7 +313,8 @@ img {
   text-transform: uppercase;
   line-height: 1.3;
 }
-.price_header_title {
+/* inner page header */
+.inner_header_title {
   font-size: 30px;
 }
 .breadcrumbs {
@@ -331,19 +337,20 @@ img {
 }
 .breadcrumbs a::after {
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background: #000000;
   position: absolute;
   right: 0;
   top: 50%;
-  margin-top: -5px;
+  margin-top: -4px;
   -ms-transform: rotate(45deg);
       transform: rotate(45deg);
 }
 .breadcrumbs span {
   color: #aba9a7;
 }
+/* price page title */
 .price_header_promo_title {
   margin-top: 48px;
   text-align: center;
@@ -368,6 +375,7 @@ img {
   left: 0;
   right: 0;
 }
+/* price page content */
 .price_contents h3 {
   font-size: 24px;
   margin-top: 60px;
@@ -386,13 +394,13 @@ img {
 }
 .price_content_list li::before {
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background: #000000;
   position: absolute;
   left: 0;
   top: 50%;
-  margin-top: -5px;
+  margin-top: -4px;
   -ms-transform: rotate(45deg);
       transform: rotate(45deg);
 }
@@ -423,7 +431,7 @@ img {
   width: 460px;
 }
 
-/* Shop Begin */
+/* shop page content */
 
 .form_sort {
   float: left;
@@ -642,9 +650,98 @@ img {
 .paginat a:hover {
   background: #663d15;
 }
-
+/* item page content */
+.item_gallery_left {
+  float: left;
+  width: 460px;
+  margin-top: 56px;
+}
+.item_desc_right {
+  float: right;
+  width: 390px;
+  margin-top: 56px;
+  padding-top: 23px;
+}
+.item_big {
+  width: 460px;
+  height: 498px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+  margin-bottom: 21px;
+}
+.items_smalls {
+  text-align: justify;
+}
+.item_small {
+  width: 140px;
+  height: 149px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+  display: inline-block;
+  vertical-align: top;
+}
+.item_desc_sec1 {
+  margin-bottom: 36px;
+}
+.item_desc_be {
+  float: left;
+  max-width: 175px;
+}
+.item_desc_article {
+  float: right;
+  max-width: 175px;
+  color: #aeaeae;
+}
+.item_desc_sec2 {
+  line-height: 24px;
+  margin-bottom: 33px;
+}
+.item_desc_cost {
+  width: 109px;
+  padding: 15px 5px;
+  display: inline-block;
+  background-color: #e5e5e5;
+  text-align: center;
+  margin-bottom: 55px;
+}
+.item_desc_add_offer {
+  padding: 15px 20px;
+  display: inline-block;
+  margin-left: -12px;
+}
+.item_desc_sec4 b {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+.item_desc_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.item_desc_list li {
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 21px;
+  position: relative;
+}
+.item_desc_list li::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -4px;
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+}
 /* footer */
-
 .footer_page {
   background: #232323 url("../img/footer_bg.png");
   margin-top: 64px;
@@ -725,7 +822,7 @@ img {
 .footer_inner {
   box-shadow: inset 0 15px 20px 0 rgba(0, 1, 1, 0.8);
 }
-/*******************indexmodal********************/
+/* indexmodal */
 
 .users_block_modal {
   background: #f9f6f3 url("../img/index_content.png");
